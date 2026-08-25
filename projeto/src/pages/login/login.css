@@ -1,50 +1,106 @@
-h1{
+h1 {
     padding: 2rem;
     font-size: 2rem;
     color: black;
 }
 
-.login{
-        
+.login {
+
     margin-top: 10rem;
     box-shadow: 3rem 3rem 3rem rgb(87, 84, 84);
     border-radius: 2rem;
     text-align: center;
-    margin-left:45rem;
+    margin-left: 45rem;
     background-color: grey;
     height: 30rem;
     width: 40rem;
 }
 
-.itens{
+.itens {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    padding: 1rem;
     gap: 2rem;
 }
 
-input{
+.itens h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.inpp,
+.inpp2 {
+    text-align: start;
+}
+
+input {
     width: 20rem;
     padding: 0.8rem;
     font-size: 1rem;
     border-radius: 0.7rem;
 }
 
-p{
+.inpeimg input {
+    padding-left: 40px;
+    transition: padding-left 0.2s ease;
+}
+
+.inpeimg input:not(:placeholder-shown) {
+    padding-left: 12px;
+}
+
+.inpeimg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icone-input {
+    position: absolute;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    gap: 0.2rem;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.inpeimg input {
+    padding-left: 3rem;
+}
+
+.inpeimg input:not(:placeholder-shown)~.icone-input {
+    opacity: 0;
+}
+
+.bott {
 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 2rem;
-    background-color: blue;
-     padding: 1rem;
-    border-radius: 2rem;
-    width: 13rem;
+    color: #FFFFFF;
+    outline: none;
+    background-color: #1768F4;
+    padding: 1rem;
+    border-radius: 1.01rem;
+    width: 22rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+
 }
 
-p:hover{
+.bott:hover {
     background-color: rgb(10, 10, 209);
-    box-shadow: 2rem 3rem 3rem rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+.bott:active {
+    transform: translateY(0);
 }
