@@ -2,18 +2,26 @@ h1 {
     padding: 2rem;
     font-size: 2rem;
     color: black;
+    font-weight: 700;
+}
+
+.ini h2{
+    position: relative;
+    bottom: 1rem;
+    color: #635e5e;
 }
 
 .login {
-
-    margin-top: 10rem;
-    box-shadow: 3rem 3rem 3rem rgb(87, 84, 84);
+    border: #FFFFFF;
+    margin-right: 15rem;
+    margin-top: 5rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     border-radius: 2rem;
     text-align: center;
     margin-left: 45rem;
-    background-color: grey;
-    height: 30rem;
-    width: 40rem;
+    background-color: rgb(243, 240, 240);
+    height: 45rem;
+    width: 35rem;
 }
 
 .itens {
@@ -37,13 +45,15 @@ h1 {
 input {
     width: 20rem;
     padding: 0.8rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 0.7rem;
+    border: #ccc;
 }
 
 .inpeimg input {
-    padding-left: 40px;
+    padding-left: 6rem;
     transition: padding-left 0.2s ease;
+    gap: 2rem;
 }
 
 .inpeimg input:not(:placeholder-shown) {
@@ -59,7 +69,7 @@ input {
 
 .icone-input {
     position: absolute;
-    left: 12px;
+    left: 9px;
     width: 18px;
     height: 18px;
     pointer-events: none;
@@ -88,19 +98,81 @@ input {
     background-color: #1768F4;
     padding: 1rem;
     border-radius: 1.01rem;
-    width: 22rem;
+    width: 27rem;
     font-size: 16px;
     font-weight: 600;
     transition: background-color 0.2s ease, transform 0.15s ease;
     text-decoration: none;
+    margin-top: 2rem;
 
 }
 
 .bott:hover {
-    background-color: rgb(10, 10, 209);
+    background-color: #0f5ce0;
     transform: translateY(-2px);
 }
 
 .bott:active {
     transform: translateY(0);
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.linha {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.texto-divisor {
+  color: #000000;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
+.gogui img{
+    width: 2.8rem;
+    height: auto;
+}
+
+.gogui{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color:#0F172A;
+    outline: none;
+    background-color:#FFFFFF;
+    padding: 1rem;
+    border-radius: 1.01rem;
+    width: 27rem;
+    height: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    text-decoration: none;
+}
+
+
+.gogui:hover {
+     background: #F8FAFC;
+  border-color: #94A3B8;
+    transform: translateY(-2px);
+}
+
+.gogui:active {
+    transform: translateY(0);
+}
+
+.gogui p{
+    font-size: 1.6rem;
+    position: relative;
+    bottom: 0.1rem;
+    padding: 0.5rem;
 }
