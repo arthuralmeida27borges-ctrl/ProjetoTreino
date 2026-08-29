@@ -5,23 +5,17 @@ h1 {
     font-weight: 700;
 }
 
-.ini h2{
-    position: relative;
-    bottom: 1rem;
-    color: #635e5e;
-}
-
 .login {
     border: #FFFFFF;
-    margin-right: 15rem;
     margin-top: 5rem;
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     border-radius: 2rem;
     text-align: center;
-    margin-left: 45rem;
+    margin-left: 65rem;
     background-color: rgb(243, 240, 240);
     height: 45rem;
     width: 35rem;
+    position: absolute;
 }
 
 .itens {
@@ -175,4 +169,50 @@ input {
     position: relative;
     bottom: 0.1rem;
     padding: 0.5rem;
+}
+
+/* Parte Azul  */
+
+.fundo {
+    display: flex;
+}
+
+.fundo-azul{
+    width: 45rem;
+    height: 55rem;
+    background-color: #0f5ce0;
+    z-index: 1;
+     position: relative;
+    overflow: hidden; 
+}
+
+.img-fundo {
+    position: absolute;
+    top: 0;
+    width: 45rem;
+    height: 55rem;
+    object-fit: cover;
+    z-index: 1; 
+}
+.maior h1 {
+    color: #d1c9c9; 
+    position: relative;
+    z-index: 2;
+}
+
+.maior{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative; 
+    z-index: 2;
+}
+
+.adiv{
+    position: relative;
+    z-index: 3;
+    width: 25rem;
+    margin-left: 10rem;
+    margin-top: 4rem;
 }
