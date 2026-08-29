@@ -3,16 +3,10 @@ import "./index.css";
 function Login() {
   return (
     <section className="fundo">
-
-         <section className="fundo-azul">
-        <div className="maior">
-          <img className="adiv" src='/assets/images/adiv.png' alt=''/>
-          <div className="texts">
-          <h1>Bem vindos de Volta</h1>
-          </div>
-      <img className="img-fundo" src="/assets/images/azul.png " alt=""/>
-        </div>
-      </section>
+      <div>
+      <img src="./assets/images/adiv.png" alt="" className="adiv-png"/>
+       <h1 className="bem-vindo">BEM VINDOS</h1>
+      </div>
       <div className="login">
         <div className="itens">
           <div className="ini">

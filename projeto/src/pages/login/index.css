@@ -1,3 +1,10 @@
+body{
+background-color: #253761;
+display: flex;
+
+
+}
+
 h1 {
     padding: 2rem;
     font-size: 2rem;
@@ -15,7 +22,9 @@ h1 {
     background-color: rgb(243, 240, 240);
     height: 45rem;
     width: 35rem;
-    position: absolute;
+    position: relative;
+    left: 300px;
+    top: -200px;
 }
 
 .itens {
@@ -171,48 +180,19 @@ input {
     padding: 0.5rem;
 }
 
-/* Parte Azul  */
+.adiv-png{
+display: flex;
+position: relative;
+width: 700px;
+left: 100px;
 
-.fundo {
-    display: flex;
 }
-
-.fundo-azul{
-    width: 45rem;
-    height: 55rem;
-    background-color: #0f5ce0;
-    z-index: 1;
-     position: relative;
-    overflow: hidden; 
-}
-
-.img-fundo {
-    position: absolute;
-    top: 0;
-    width: 45rem;
-    height: 55rem;
-    object-fit: cover;
-    z-index: 1; 
-}
-.maior h1 {
-    color: #d1c9c9; 
-    position: relative;
-    z-index: 2;
+.bem-vindo{
+display: flex;
+position: relative;
+font-size: 100px;
+left: 100px;
+width: 650px;
+color: #1768F4;
 }
 
-.maior{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    position: relative; 
-    z-index: 2;
-}
-
-.adiv{
-    position: relative;
-    z-index: 3;
-    width: 25rem;
-    margin-left: 10rem;
-    margin-top: 4rem;
-}
