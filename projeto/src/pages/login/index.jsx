@@ -6,11 +6,11 @@ function Login() {
 
          <section className="fundo-azul">
         <div className="maior">
-          <img className="adiv" src='/assets/images/adiv.png' alt=''/>
+          <div className="adiv"></div>
+          <img className='adiv-img' src='/assets/images/adiv.png' alt=''/>
           <div className="texts">
-          <h1>Bem vindos de Volta</h1>
+          <h1>Bem vindos de <span className="cor">Volta</span></h1>
           </div>
-      <img className="img-fundo" src="/assets/images/azul.png " alt=""/>
         </div>
       </section>
       <div className="login">
@@ -31,6 +31,12 @@ function Login() {
             <div className="inpeimg">
               <input type="password" placeholder="Senha" required></input>
               <img src="./assets/images/senha.png" alt="" className="icone-input" />
+            </div>
+            <div className="ultimo">
+              <div className="check">
+                <input type="checkbox"/>
+                <p>Lembrar-me</p>
+              </div>
             </div>
           </div>
           <a className="bott" href="#">Entra</a>

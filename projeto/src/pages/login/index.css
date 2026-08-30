@@ -171,6 +171,32 @@ input {
     padding: 0.5rem;
 }
 
+.ultimo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.check input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.check p {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Parte Azul  */
 
 .fundo {
@@ -180,24 +206,16 @@ input {
 .fundo-azul{
     width: 45rem;
     height: 55rem;
-    background-color: #0f5ce0;
-    z-index: 1;
+     background: 
+        radial-gradient(circle at 80% 10%, rgba(59, 130, 246, 0.15), transparent 50%),
+        linear-gradient(160deg, #0a1128 0%, #0d1b4d 50%, #0f2a6b 100%);
      position: relative;
     overflow: hidden; 
 }
 
-.img-fundo {
-    position: absolute;
-    top: 0;
-    width: 45rem;
-    height: 55rem;
-    object-fit: cover;
-    z-index: 1; 
-}
 .maior h1 {
     color: #d1c9c9; 
     position: relative;
-    z-index: 2;
 }
 
 .maior{
@@ -206,13 +224,27 @@ input {
     text-align: center;
     flex-direction: column;
     position: relative; 
-    z-index: 2;
 }
 
-.adiv{
-    position: relative;
-    z-index: 3;
-    width: 25rem;
-    margin-left: 10rem;
-    margin-top: 4rem;
+.adiv-img{
+    display: flex;
+    align-items: center;
+    width:10rem;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+/* Parte dos itens*/
+
+.texts h1{
+    font-size: 2.5rem;
+font-weight: 700;
+line-height: 1.1;
+font-family: 'Inter', sans-serif;
+}
+
+.cor{
+    color: #1768F4;
+    font-size:2.5rem;
+    font-family: 'Inter', sans-serif;
 }
