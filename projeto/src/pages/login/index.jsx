@@ -1,18 +1,41 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <section className="fundo">
 
-         <section className="fundo-azul">
+      <section className="fundo-azul">
         <div className="maior">
           <div className="adiv"></div>
-          <img className='adiv-img' src='/assets/images/adiv.png' alt=''/>
+          <img className='adiv-img' src='/assets/images/adiv.png' alt='' />
           <div className="texts">
-          <h1>Bem vindos de <span className="cor">Volta</span></h1>
+            <h1>Bem vindos de <span className="cor">Volta</span></h1>
+            <h2>Faça login para acessar sua conta
+              <br />e continuar de onde parou</h2>
+          </div>
+        <div className="iconis">
+          <div className="Escudo">
+            <img src="./assets/images/escudo.png" alt="" />
+            <h1>Seguro e confiavel</h1>
+            <h2>Seus dados protegidos com criptografia de ponta a ponta</h2>
+          </div>
+          <div className="estastic">
+            <img style={{ width: "80px" }} src="./assets/images/Estástitica.png" alt="" />
+            <h1>Acesse suas informações</h1>
+            <h2>Visualize seu historico de compras, 
+              <br/>atividades e muitas coisas</h2>
+          </div>
+          <div className="raio">
+            <img src="./assets/images/raio.png" alt="" />
+            <h1>Rápido e fácil</h1>
+            <h2>Uma experiecia simples e intuitiva 
+              <br/>para o seu dia a dia</h2>
           </div>
         </div>
+        </div>
       </section>
+      {/* A tela de login inteira é daqui pra baixo */}
       <div className="login">
         <div className="itens">
           <div className="ini">
@@ -34,8 +57,11 @@ function Login() {
             </div>
             <div className="ultimo">
               <div className="check">
-                <input type="checkbox"/>
+                <input type="checkbox" />
                 <p>Lembrar-me</p>
+              </div>
+              <div className="esqueci">
+                <Link className="esqueciLI" to='/semSenha'><p>Esqueceu a senha?</p></Link>
               </div>
             </div>
           </div>
@@ -46,9 +72,13 @@ function Login() {
             <span className="linha"></span>
           </div>
           <div className="gogui">
-            <img src="./assets/images/google.webp" alt=""/>
+            <img src="./assets/images/google.webp" alt="" />
             <p>Entrar com Google</p>
           </div>
+          <div className="naotem">
+        <h2>Não tem conta?</h2>
+        <Link className="esqueciLI" to='/criação'>Clique aqui para se casdastrar</Link>
+      </div>
         </div>
       </div>
     </section>
