@@ -1,7 +1,10 @@
-body {
-  text-align: center  ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.lili{
-  font-size: 20px;
+html, body, #root {
+  height: 100%;
+  width: 100%;
 }
