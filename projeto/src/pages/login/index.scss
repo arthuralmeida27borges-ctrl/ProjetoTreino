@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
     padding: 2rem;
     font-size: 2rem;
@@ -11,7 +17,7 @@ h1 {
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
     border-radius: 2rem;
     text-align: center;
-    margin-left: 65rem;
+    margin-left: 77rem;
     background-color: rgb(243, 240, 240);
     height: 45rem;
     width: 35rem;
@@ -143,7 +149,7 @@ input {
     color:#0F172A;
     outline: none;
     background-color:#FFFFFF;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1.01rem;
     width: 27rem;
     height: 2rem;
